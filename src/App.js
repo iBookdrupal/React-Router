@@ -3,12 +3,13 @@ import {createBrowserRouter, createRoutesFromElements, RouterProvider, Route} fr
 //pages 
 import Home from './pages/Home'
 import About from './pages/About'
+import Contact from './pages/help/contact'
+import Faq from './pages/help/faq'
 
 //layout
 import RootLayout from './layout/RootLayout'
 import HelpLayout from './layout/HelpLayout'
-import Contact from './pages/help/contact'
-import Faq from './pages/help/faq'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(

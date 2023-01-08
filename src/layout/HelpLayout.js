@@ -3,7 +3,7 @@ export default function HelpLayout(){
 	return(
 		<div className='help-layout'>
 			<h2>Help Website</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt provident ipsam, ea error sunt velit odio quis eligendi eos repellendus, quidem perferendis, non obcaecati rerum vero. Dolores, ipsa, autem.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt provident ipsam.</p>
 
 
 			<nav>

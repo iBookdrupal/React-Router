@@ -6,7 +6,7 @@ export default function Contact(){
 			<form>
 				<label htmlFor="email">
 					<span>Your Email</span>
-					<input type="email" name='email' required />
+					<input type="email" name='email' placeholder='yourname@email.com' required />
 
 				</label>
 
@@ -14,7 +14,7 @@ export default function Contact(){
 				<label htmlFor="message">
 					<span>Your Message</span>
 					
-					<textarea name="message" id="" cols="30" rows="10"></textarea>
+					<textarea name="message" id="" cols="30" rows="10" placeholder='Your message'></textarea>
 
 				</label>
 
