@@ -7,7 +7,8 @@ import Contact from './pages/help/contact'
 import Faq from './pages/help/faq'
 import NotFound from './pages/notfound'
 import Careers, {careersLoader} from './pages/careers/Careers'
-
+import CareerDetails, {careerDetailsLoader} from './pages/careers/CareerDetails'
+import CareerError from './pages/careers/CareerError'
 
 //layout
 import RootLayout from './layout/RootLayout'
@@ -29,7 +30,14 @@ const router = createBrowserRouter(
 
           <Route path='careers' element={<CareersLayout />}>
             <Route index  element={<Careers />} loader={careersLoader}/>
+            <Route 
+            path=':id' 
+            element={<CareerDetails />} 
+            loader={careerDetailsLoader}
+            errorElement={<CareerError />}
+            />
           </Route>
+
 
           <Route path='*' element={<NotFound />}/>
     </Route>
