@@ -3,7 +3,7 @@ import {createBrowserRouter, createRoutesFromElements, RouterProvider, Route} fr
 //pages 
 import Home from './pages/Home'
 import About from './pages/About'
-import Contact from './pages/help/contact'
+import Contact, {contactAction} from './pages/help/contact'
 import Faq from './pages/help/faq'
 import NotFound from './pages/notfound'
 import Careers, {careersLoader} from './pages/careers/Careers'
@@ -25,7 +25,7 @@ const router = createBrowserRouter(
 
           <Route path='help' element={<HelpLayout/>}>
             <Route path='faq' element={<Faq />} />
-            <Route path='contact' element={<Contact />} />
+            <Route path='contact' element={<Contact />} action={contactAction} />
           </Route>
 
           <Route path='careers' element={<CareersLayout />}>
