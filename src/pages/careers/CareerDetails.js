@@ -1,6 +1,6 @@
-import {useParams, useLoaderData} from 'react-router-dom'
+import {useLoaderData} from 'react-router-dom'
 export default function CareerDetails(){
-	const {id} = useParams()
+	//const {id} = useParams()
 	const career = useLoaderData()
 
 
