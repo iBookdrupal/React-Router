@@ -1,30 +1,24 @@
-import {BrowserRouter, Routes, Route, Link, NavLink} from 'react-router-dom'
+import {createBrowserRouter, createRoutesFromElements, RouterProvider, Route} from 'react-router-dom'
 
 //pages 
 import Home from './pages/Home'
 import About from './pages/About'
 
+//layout
+import RootLayout from './layout/RootLayout'
 
-function App() {
-  return (
-    <BrowserRouter>
-    
-    <header>
-      <nav>
-        <h1>Job Router</h1>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/about'>About</NavLink>
-      </nav>
-
-    </header>
-      <main>
-        <Routes>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
           <Route index element={<Home />}/>
           <Route path='about' element={<About />}/>
-        </Routes>
+    </Route>
+    )
+  )
 
-      </main>
-    </BrowserRouter>
+function App() {
+  return (   
+      <RouterProvider router={router} />
   );
 }
 
